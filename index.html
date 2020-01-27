@@ -4,16 +4,51 @@
 	<meta charset="UTF-8">
 	<title>Timeliner</title>
 	<link rel="stylesheet" href="timeliner.min.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="">
+    <style type="text/css">
+        .timeline-container {display: grid;
+            grid-template-columns: 1fr;}
+            .july19 {
+                grid-column: 1/ -1;
+                grid-row: 1 / 2;
+            }
+            .july20 {
+                grid-column: 2/ 3;
+                grid-row: 2 / 3;
+            }
+            .july21 {
+                grid-column: 1/ -1;
+                grid-row: 3 / 4;
+            }
+            .july22 {
+                grid-column: 2/ 3;
+                grid-row: 4 / 5;
+            }
+            .july23 {
+                grid-column: 1/ -1;
+                grid-row: 5 / 6;
+            }
 
+            .hline {
+                position: absolute;
+                border: 2px solid black;
+                height: 100%;
+                left: 50%;
+            }
+
+    </style>
 
 </head>
 <body>
 
-	<div id="timeline" class="timeline-container">
-        <div class="timeline-wrapper">
-                <h2 class="timeline-time">Wednesday, July 19</h2>
+<!-- WEDNESDAY !-->
 
-                <dl class="timeline-series">
+	<div id="timeline" class="timeline-container">
+        <div class="hline"></div>
+        <div class="timeline-wrapper july19">
+                <h2 class="timeline-time ">Wednesday, July 19</h2>
+
+                <dl class="timeline-series ">
 
                     <dt class="timeline-event" id="event01"><a>Faelledparken Open Street Contest</a></dt>
                         <dd class="timeline-event-content" id="event01EX">
@@ -54,7 +89,9 @@
                 </dl>
         </div>
 
-        <div class="timeline-wrapper">
+<!-- THURSDAY !-->
+
+        <div class="timeline-wrapper july20">
                 <h2 class="timeline-time">Thursday, July 20</h2>
 
                 <dl class="timeline-series">
@@ -95,8 +132,9 @@
                 </dl>
         </div>
 
-            <div id="timeline" class="timeline-container">
-        <div class="timeline-wrapper">
+<!-- FRIDAY !-->
+
+        <div class="timeline-wrapper july21">
                 <h2 class="timeline-time">Friday, July 21</h2>
 
                 <dl class="timeline-series">
@@ -127,7 +165,9 @@
                 </dl>
         </div>
 
-                <div class="timeline-wrapper">
+<!-- SATURDAY !-->
+
+                <div class="timeline-wrapper july22">
                 <h2 class="timeline-time">Saturday, July 22</h2>
 
                 <dl class="timeline-series">
@@ -171,8 +211,9 @@
                 </dl>
         </div>
 
-        <div id="timeline" class="timeline-container">
-        <div class="timeline-wrapper">
+<!-- SUNDAY !-->
+
+        <div class="timeline-wrapper july23">
                 <h2 class="timeline-time">Sunday, July 23</h2>
 
                 <dl class="timeline-series">
@@ -185,7 +226,6 @@
 
                 </dl>
         </div>
-    <br class="clear">
 </div>
 
 
