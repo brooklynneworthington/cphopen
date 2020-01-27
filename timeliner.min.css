@@ -83,7 +83,7 @@ h2 span{background:#ccc;
 	}
 
 .timeline-series dd h3{
-	color:#FFF;
+	color: black;
 	clear:both;
 	float:left;
 	font-size:1.5em;
@@ -152,4 +152,9 @@ h2 span{background:#ccc;
 
 .clear{
 	clear:both
+}
+
+h3 {
+	font-size: 14px;
+	color: solid black;
 }
